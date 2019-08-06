@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 02</title>
+</head>
+<body>
+<!-- sử dụng hàm prompt() để lấy thông tin nhiệt  độ hiện tai được nhập bởi người truy cập.
+ nếu nhiệt độ trên 100 yêu cầu người dùng giảm nhiệt độ xuống.nếu nhiệt độ dưới 20 yêu cầu người dùng tăng nhiệt độ-->
+<script type="text/javascript">
+    let nhietDO=parseInt(prompt("Chọn nhiệt độ thích hợp:"));
+    while (nhietDO<=20 || nhietDO >=100) {
+        if (nhietDO>=100){
+            nhietDO=prompt("giảm nhiệt độ xuống");
+        } else {
+            nhietDO=prompt("tăng nhiệt độ lên");
+        }
+
+    }
+    alert("thực thi");
+</script>
+
+</body>
+</html>

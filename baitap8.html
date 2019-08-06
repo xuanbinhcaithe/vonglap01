@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HÃY ĐOÁN THỬ XEM</title>
+</head>
+<body>
+<!--  game đoán số-->
+    <button type="button" onclick="gamestart()" style="">BẮT ĐẦU</button>
+    <script>
+        function gamestart() {
+            let number=parseInt(prompt("chọn khoảng"));
+            let sobian = Math.floor(Math.random()*number)+1;
+            console.log(sobian);
+            for (let i=1;i<3;i++) {
+                let number1=parseInt(prompt("nhập số:"));
+                if (number1===sobian){
+                   alert("chúc mừng bạn");
+                    break;
+                }else if (number1<sobian) {
+                    number1=parseInt(prompt('nhỏ hơn nhập lại:'));
+                } else {
+                    number1=parseInt(prompt("lơn hơn nhập lại"));
+                }
+                console.log(i);
+        }
+
+        }
+        document.write(i);
+    </script>
+</body>
+</html>

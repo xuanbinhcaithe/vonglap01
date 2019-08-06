@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 05</title>
+</head>
+<body>
+    <!-- tính tổng 20 số đầu tiên trong dãy fibonacci-->
+    <input id="enter" type="text" value="">
+    <input type="button" onclick="tong()" value="click"><br>
+    <p id="display"></p>
+
+    <script type="text/javascript">
+        function tong() {
+            let a=1;
+            let b=0;
+            let temp;
+            let resutl=0;
+            let number =parseInt(document.getElementById("enter").value);
+            for (let i=1;i<=number;i++) {
+                temp=a;
+                a=a+b;
+                b=temp;
+                resutl+=temp;
+            }
+            document.getElementById("display").innerHTML=" tổng của " + number + " số đầu trong chuỗi fibonacci la : " + resutl;
+        }
+    </script>
+
+</body>
+</html>

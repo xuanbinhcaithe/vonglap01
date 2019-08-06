@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 03</title>
+</head>
+<body>
+<!--hiện thị 20 số đầu tiên trong day fibonacci -->
+<input id="enter" type="text" value="">
+<input type="button" onclick="fibonacci()" value="click here"><br>
+<p id="display"></p>
+    <script>
+        function fibonacci() {
+            let number = parseInt(document.getElementById("enter").value);
+            let a = 1;
+            let b = 0;
+            let temp;
+            for (let i = 0; i<=number ; i++) {
+                temp = a;
+                a = a + b;
+                b = temp;
+                document.write(temp + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

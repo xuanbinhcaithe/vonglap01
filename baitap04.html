@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 05</title>
+</head>
+<body>
+    <!--tìm số đầu tiên trong day fibonacci chia hết cho 5 -->
+    <input type="text" id="enter" value="">
+    <input type="button" onclick="fibonacci()" value="click here"><br>
+    <p id="display" ></p>
+    <script >
+        function fibonacci() {
+            let number=parseInt(document.getElementById("enter").value);
+            let a=1;
+            let b=0;
+            let temp;
+            for (let i=1; i> 0;i++) {
+                temp=a;
+                a=a+b;
+                b = temp;
+                if (temp % number===0){
+                    document.getElementById("display").innerHTML="số đầu tiên chia hết cho "+number +" trong dãy fucinacci là "+temp;
+                    break;
+                }
+
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
